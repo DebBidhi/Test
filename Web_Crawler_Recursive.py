@@ -29,6 +29,13 @@ url=input('Enter the Url: ')
 
 linkf(url, count, position)
 
+'''
+Retrieve HTML data from a specified URL
+Use BeautifulSoup to parse the HTML data
+Extract the 'href' attribute values of the 'a' tags in the HTML data
+Repeat step 1 to 3 a specified number of times, using the 'href' values as the new URLs
+Print the final URL after the specified number of iterations'''
+
 
 
 

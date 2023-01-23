@@ -31,3 +31,11 @@ print(mail_no)
 print( max_key, mail_no)
 
 
+'''
+Open a file and read it line by line
+Use a dictionary to count the occurrences of an email address in the file
+Find the email address with the highest count
+Print the email address and the count
+
+'''
+

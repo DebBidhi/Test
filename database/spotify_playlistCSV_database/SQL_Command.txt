@@ -1,0 +1,8 @@
+CREATE TABLE result_table_Interested_output AS
+SELECT Track.Track_name,Track.track_preview,Popularity.Popularity_percentage,Album.Album_Image,Album_Release.Full_Date
+	FROM Track,Popularity,Album,Album_Release
+		ON Track.Popularity_id=Popularity.id
+		AND Track.Album_id=Album.id 
+		AND Album.Album_Release_Date_id=Album_Release.id
+		WHERE Popularity_percentage>50 
+		ORDER BY Popularity_percentage DESC
